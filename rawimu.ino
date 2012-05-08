@@ -10,7 +10,7 @@
 
 #define FIMU_ITG3200_DEF_ADDR ITG3200_ADDR_AD0_LOW
 
-#define TIMESLICE_PERIOD 50 //milliseconds
+#define TIMESLICE_PERIOD 5 //milliseconds
 
 int accelx;
 int accely;
@@ -62,7 +62,7 @@ void readaccel(int *x, int *y, int *z){
 }
 
 void setup() {
-  Serial.begin(9600);
+  Serial.begin(115200);
   Wire.begin();
 
   delay(5);
